@@ -17,7 +17,7 @@ The choice of the node to disconnect, is according to some pre-defined logic.
 
 # Classes:
 Session – This is the main class, which holds the graph, the list of agents, and the algorithm the contact tracers use to decide which node to disconnect from the graph.
-Graph – This class represents a graph, represented using an adjacency matrix. Each node in the graph has an index. (The graph is always undirected).
+**Graph** – This class represents a graph, represented using an adjacency matrix. Each node in the graph has an index. (The graph is always undirected).
 Agent – An agent can be either a virus, or a contact tracer. It holds a reference to the main session. In each cycle, the agent affects the graph in a
 specific way, using the pure virtual function act().
 Tree – This class used to represent a shortest path tree in the graph, from some starting node. It is used by the contact tracers to decide which node to disconnect 
